@@ -20,7 +20,7 @@ public class StaticObjectFactory {
 	
 	public static  PersonType createPersonType(){
 		PersonType person = new PersonType();
-		person.setName("Rischmueller");
+		person.setName("Rischmueller" + "\u25C4" );
 		person.setVorname("Stefan");
 		person.getAdressen().add(createAdresseType());
 		return person;

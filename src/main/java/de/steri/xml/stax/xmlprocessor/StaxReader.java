@@ -19,7 +19,7 @@ public class StaxReader {
 		long counter = 0;
 		XMLInputFactory factory = XMLInputFactory.newInstance();
 		XMLStreamReader parser = factory
-				.createXMLStreamReader(new FileInputStream(directoryPath + "/Dateiaustausch.xml"));
+				.createXMLStreamReader(new FileInputStream(StaticVariables.FILE));
 		StringBuilder spacer = new StringBuilder();
 		while (parser.hasNext()) {
 			counter++;
@@ -66,7 +66,7 @@ public class StaxReader {
 		long counter = 0;
 		XMLInputFactory factory = XMLInputFactory.newInstance();
 		XMLStreamReader parser = factory
-				.createXMLStreamReader(new FileInputStream(directoryPath + "/Dateiaustausch.xml"));
+				.createXMLStreamReader(new FileInputStream(StaticVariables.FILE));
 		StringBuilder spacer = new StringBuilder();
 		while (parser.hasNext()) {
 			StaxToObjectMapper.dispatchEvent(parser);

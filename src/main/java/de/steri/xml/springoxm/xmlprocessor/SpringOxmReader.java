@@ -37,7 +37,7 @@ public class SpringOxmReader {
 	public void readXML() throws Exception{
 		FileInputStream is = null;
         try {
-            is = new FileInputStream(StaticVariables.DIRECTORY_PATH + "/Dateiaustausch.xml");
+            is = new FileInputStream(StaticVariables.FILE);
             DateiType datei = (DateiType)getUnmarshaller().unmarshal(new StreamSource(is));
             System.out.println(datei.getPersonen().size());
         } finally {

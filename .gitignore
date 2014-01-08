@@ -5,9 +5,10 @@
 *.pydevproject
 #.project
 .metadata
+*.class
 bin/
 tmp/
-target/
+*/target/**
 *.tmp
 *.bak
 *.swp

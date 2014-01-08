@@ -36,7 +36,7 @@ public class SpringOxmWriter {
 	public void writeXML(long anzahl) throws Exception{
 		FileOutputStream os = null;
 		try {
-			os = new FileOutputStream(StaticVariables.DIRECTORY_PATH + "/Dateiaustausch.xml");
+			os = new FileOutputStream(StaticVariables.FILE);
 			
 			getMarshaller().marshal(StaticObjectFactory.createDateiType(anzahl), new StreamResult(os));
 		} finally {

@@ -32,7 +32,7 @@ public class StaxJaxbReader {
 	public void readXMLFile() throws IOException, Exception {
 		List<PersonType> liste = new ArrayList<PersonType>();
 		XMLInputFactory xmlif = XMLInputFactory.newInstance();
-		FileReader fr = new FileReader(directoryPath + "/Dateiaustausch.xml");
+		FileReader fr = new FileReader(StaticVariables.FILE);
 		XMLEventReader xmler = xmlif.createXMLEventReader(fr);
 		EventFilter filter = new EventFilter() {
 			public boolean accept(XMLEvent event) {

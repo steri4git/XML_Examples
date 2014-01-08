@@ -37,8 +37,7 @@ public class StaxJaxbReader2 {
 	   }
 
 	   public void readXMLFile() throws IOException, Exception {
-		Reader xml = new InputStreamReader(new FileInputStream(directoryPath
-				+ "/Dateiaustausch.xml"), charEnc);
+		Reader xml = new InputStreamReader(new FileInputStream(StaticVariables.FILE), charEnc);
 		try {
 		/**TODO MUSS GEFIXT werden
 		 * return parseXmlElemente(xml, PACKAGE, elemVerarb);

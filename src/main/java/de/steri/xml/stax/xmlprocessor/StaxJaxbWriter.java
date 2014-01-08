@@ -17,13 +17,13 @@ import de.steri.xml.util.StaticVariables;
 
 public class StaxJaxbWriter {
 	
-	private String charEnc ="UTF-8";
+	private String charEnc ="ISO-8859-15";
 	private String directoryPath = StaticVariables.DIRECTORY_PATH;
 
 
 	public void writeXMLFile(long quantity) throws IOException, Exception {
 
-		OutputStream os = new FileOutputStream(new File(directoryPath + "/dateiaustausch.xml"));
+		OutputStream os = new FileOutputStream(new File(StaticVariables.FILE));
 		try {
 			XMLStreamWriter xsw = XMLOutputFactory.newInstance()
 					.createXMLStreamWriter(new OutputStreamWriter(os, charEnc));
