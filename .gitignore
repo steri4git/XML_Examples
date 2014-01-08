@@ -4,11 +4,11 @@
 
 *.pydevproject
 #.project
+target/
 .metadata
 *.class
 bin/
 tmp/
-*/target/**
 *.tmp
 *.bak
 *.swp
