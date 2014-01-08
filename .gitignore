@@ -3,16 +3,17 @@
 #################
 
 *.pydevproject
-.project
+#.project
 .metadata
 bin/
 tmp/
+target/
 *.tmp
 *.bak
 *.swp
 *~.nib
 local.properties
-.classpath
+#.classpath
 .settings/
 .loadpath
 
@@ -213,3 +214,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+/target
